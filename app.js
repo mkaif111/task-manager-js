@@ -45,6 +45,7 @@ function addTask(e){
     if(taskInput.value===""){
         alert("Add a Task");
     }
+    else{
     // create li element
     const li =  document.createElement('li');
     li.className = "collection-item";
@@ -67,6 +68,7 @@ function addTask(e){
     taskInput.value = '';
 
     e.preventDefault();
+    }
 }
 // TStore Task
 const storeInLocalStorage = (task)=>{
